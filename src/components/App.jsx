@@ -29,7 +29,6 @@ export const App = () => {
     ) {
       return alert(`${name} is already in contacts`);
     }
-    console.log(addContact({ name, number }));
     dispatch(addContact({ name, number }));
   };
 
@@ -42,7 +41,6 @@ export const App = () => {
 
   const removeContact = id => {
     dispatch(deleteContact(id));
-    console.log(deleteContact(id));
   };
 
   const filtered = filterByName();
