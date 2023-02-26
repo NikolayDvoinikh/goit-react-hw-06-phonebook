@@ -4,8 +4,8 @@ import ContactList from './ContactList/ContactList';
 
 import { useSelector, useDispatch } from 'react-redux';
 
-import { addContact, deleteContact } from 'Redux/contacts/contacts-actions';
-import { setFilter } from 'Redux/filter/filter-actions';
+import { addContact, deleteContact } from 'Redux/contacts/contacts-slice';
+import { setFilter } from 'Redux/filter/filter-slice';
 import { getContactList } from 'Redux/contacts/contacts-selectors';
 import { getFilter } from 'Redux/filter/filter-selectors';
 
